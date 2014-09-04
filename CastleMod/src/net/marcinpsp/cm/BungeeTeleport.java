@@ -15,9 +15,9 @@ private HashSet<String> connPlayer = new HashSet<String>();
 public BungeeTeleport(){
 Bukkit.getMessenger().registerOutgoingPluginChannel(Main.getPlugin(), "BungeeCord");}
 
-public void sendAllPlayer(String serverName){
+public void sendAllPlayer(String nameServer){
 for (Player player : Bukkit.getOnlinePlayers()){
-sendPlayerServer(player, serverName);}}
+sendPlayerServer(player, nameServer);}}
 
 public void sendPlayerServer(final Player player, String nameServer){
 if (this.connPlayer.contains(player.getName())) {
