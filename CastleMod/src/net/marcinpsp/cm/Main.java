@@ -9,7 +9,7 @@ public static Main plugin= null;
 
 public void onEnable(){
 plugin = this;
-
+BungeeTeleport bt = new BungeeTeleport();
 }
 
 
